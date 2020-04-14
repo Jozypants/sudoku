@@ -11,7 +11,7 @@ export function Sudoku(row1, row2, row3, row4, row5, row6, row7, row8, row9) {
 }
 
 Sudoku.prototype.checkRepeat = function () {
-  var newString = (this.row1).split("");
+  var newString = (this.row).split("");
   if (newString.sort().join("") === "123456789") {
     return true;
   };
